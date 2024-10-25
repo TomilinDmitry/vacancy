@@ -1,0 +1,28 @@
+.header {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+    margin-bottom: 20px;
+  .title {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 300;
+    color: rgba(12, 56, 122, 1);
+    margin: 0px;
+  }
+  .button {
+    position: absolute;
+    left: 1vw;
+    top: 2vw;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    background: transparent;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}

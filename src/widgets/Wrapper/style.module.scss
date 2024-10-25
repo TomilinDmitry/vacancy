@@ -1,0 +1,21 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  background: linear-gradient(
+    180deg,
+    #c3c3c3 0%,
+    #b2b5b9 25%,
+    #a0a6a6 50%,
+    #818f9c 62.1%,
+    #49658c 84.6%,
+    #0c387a 100%
+  );
+  height: calc(100vh - 30px);
+  align-items: center;
+  //   justify-content: space-around;
+  //   width: 100%;
+  .container {
+    display: flex;
+  }
+}
