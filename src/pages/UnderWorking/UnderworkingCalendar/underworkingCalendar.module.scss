@@ -1,0 +1,16 @@
+@import "/src/app/service/variables";
+.calendarContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.cardContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 270px;
+  overflow: hidden;
+  overflow-y: auto;
+}

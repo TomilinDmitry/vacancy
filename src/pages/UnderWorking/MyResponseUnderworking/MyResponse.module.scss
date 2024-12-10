@@ -1,0 +1,13 @@
+@import "/src/app/service/variables";
+.container {
+  width: 100%;
+  overflow: auto;
+}
+.responseList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  //   overflow: hidden;
+  gap: 10px;
+}

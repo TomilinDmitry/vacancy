@@ -11,7 +11,9 @@ export const Vacancy = () => {
         <Link to='/vacancy/search-vacancy'>
           <button className={s.buttonVacancy}>Поиск вакансий</button>
         </Link>
-        <button className={s.buttonVacancy}>Мои отлики</button>
+        <Link to='/vacancy/my-response'>
+          <button className={s.buttonVacancy}>Мои отлики</button>
+        </Link>
       </div>
     </Wrapper>
   );

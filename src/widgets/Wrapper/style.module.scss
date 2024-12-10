@@ -19,3 +19,14 @@
     display: flex;
   }
 }
+
+.owner {
+  @extend .wrapper;
+  background: linear-gradient(
+    180deg,
+    #c3c3c3 0%,
+    #bbb3bc 23.5%,
+    #a383a6 56%,
+    #691071 100%
+  );
+}

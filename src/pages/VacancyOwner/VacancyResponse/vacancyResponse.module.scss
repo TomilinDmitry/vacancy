@@ -1,0 +1,8 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  height: 600px;
+  overflow: auto;
+  width: 100%;
+}

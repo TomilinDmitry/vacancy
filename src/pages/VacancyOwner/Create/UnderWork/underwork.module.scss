@@ -1,0 +1,54 @@
+@import "/src/app/service/variables";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.text {
+  font-size: 12px;
+  font-weight: 400px;
+  text-align: justify;
+  margin-bottom: 15px;
+  .textWhite {
+    color: white;
+    text-decoration: underline;
+  }
+}
+.select {
+  width: $default_width_input;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 12px;
+}
+.input {
+  max-width: $default_width_input;
+  border: none;
+  outline: none;
+  padding: 10px;
+  border-radius: 12px;
+}
+.label {
+  font-size: 12px;
+  color: #000000;
+}
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  max-width: $default_width_input;
+  width: 100%;
+  gap: 5px;
+}
+.selectContainer {
+  @extend .inputContainer;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}

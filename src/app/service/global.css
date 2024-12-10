@@ -1,0 +1,9 @@
+.rdp-root {
+  --rdp-day-height: 1.5rem; /* Высота дня */
+  --rdp-day-width: 2.7rem; /* Ширина дня */
+  background-color: white; /* Фон всего календаря */
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  --rdp-accent-color: rgb(70, 143, 253);
+}

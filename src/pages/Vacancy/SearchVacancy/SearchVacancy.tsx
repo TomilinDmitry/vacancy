@@ -1,17 +1,24 @@
 import React, { useState } from "react";
-import { Wrapper } from "../../widgets/Wrapper/Wrapper";
-import { Header } from "../../widgets/Header/Header";
+import { Wrapper } from "../../../widgets/Wrapper/Wrapper";
+import { Header } from "../../../widgets/Header/Header";
 import s from "./style.module.scss";
-import { AddressSuggestions } from "react-dadata";
+import {
+  AddressSuggestions,
+  DaDataAddress,
+  DaDataSuggestion,
+} from "react-dadata";
 import "react-dadata/dist/react-dadata.css";
-
+import "./dadata.css";
+import { Link } from "react-router-dom";
 export const SearchVacancy = () => {
-  const [value, setValue] = useState();
+  const [value, setValue] = useState<
+    DaDataSuggestion<DaDataAddress> | undefined
+  >();
   return (
     <Wrapper>
       <Header name='ПОИСК ВАКАНСИЙ' />
       <div className={s.container}>
-        <div>
+        <div className={s.centerBlock}>
           <p className={s.description}>
             <span>
               Уважаемый соискатель на должность сотрудника пункта
@@ -31,10 +38,23 @@ export const SearchVacancy = () => {
           <AddressSuggestions
             token='bcbe8a79e4b94cc3270a0204684977965ab06020'
             value={value}
-            onChange={() => setValue}
+            onChange={(newValue) => setValue(newValue)}
+            delay={1000}
+            selectOnBlur={true}
+            count={5}
           />
         </div>
-        <button className={s.searchBtn}>ПОИСК</button>
+        {value?.value ? (
+          <Link to='/vacancy/search-vacancy/response-search'>
+            <button
+              className={value?.value ? s.searchBtn : s.notActive}
+            >
+              ПОИСК
+            </button>
+          </Link>
+        ) : (
+          <button className={s.notActive}>ПОИСК</button>
+        )}
       </div>
     </Wrapper>
   );

@@ -1,0 +1,49 @@
+@import "/src/app/service/variables";
+
+.wrapperBlackList {
+  position: absolute;
+  width: 100vw;
+  height: calc(100vh - 30px);
+  backdrop-filter: blur(10px);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 15px 0px;
+  align-items: center;
+  top: 0;
+}
+.titleContainer {
+  display: flex;
+  align-items: flex-start;
+  img {
+    margin-top: 5px;
+  }
+}
+
+.containerBlackList {
+  display: flex;
+  width: calc(100vw - 30px);
+  padding: 15px;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.blackListTitle {
+  color: white;
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.blackListInput {
+  padding: 0;
+  margin: 0;
+  outline: none;
+  border: none;
+  max-width: calc($default_width_input - 30px);
+  width: 100%;
+  height: 150px;
+  border-radius: 15px;
+  padding: 15px;
+  resize: none;
+}

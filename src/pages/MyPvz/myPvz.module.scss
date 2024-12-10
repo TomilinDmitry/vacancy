@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  gap: 10px;
+  a {
+    width: 100%;
+    color: #691071;
+    text-align: center;
+  }
+}
